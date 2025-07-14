@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-14T19:21:25 IST" name="Surefire suite" finished-at="2025-07-14T19:21:48 IST" duration-ms="22838">
+  <suite started-at="2025-07-14T19:27:27 IST" name="Surefire suite" finished-at="2025-07-14T19:28:13 IST" duration-ms="45733">
     <groups>
     </groups>
-    <test started-at="2025-07-14T19:21:25 IST" name="Surefire test" finished-at="2025-07-14T19:21:48 IST" duration-ms="22838">
+    <test started-at="2025-07-14T19:27:27 IST" name="Surefire test" finished-at="2025-07-14T19:28:13 IST" duration-ms="45733">
       <class name="com.irctc.base.BaseTest">
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.irctc.base.BaseTest@69b2283a]" started-at="2025-07-14T19:21:47 IST" name="tearDown" finished-at="2025-07-14T19:21:48 IST" duration-ms="511" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.irctc.base.BaseTest@69b2283a]" started-at="2025-07-14T19:28:12 IST" name="tearDown" finished-at="2025-07-14T19:28:13 IST" duration-ms="459" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.irctc.base.BaseTest -->
       <class name="com.irctc.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.LoginPageTest@470f1802]" started-at="2025-07-14T19:21:25 IST" name="setup" finished-at="2025-07-14T19:21:37 IST" duration-ms="11828" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.irctc.tests.LoginPageTest@470f1802]" started-at="2025-07-14T19:27:27 IST" name="setup" finished-at="2025-07-14T19:27:41 IST" duration-ms="14538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.irctc.tests.LoginPageTest@470f1802]" started-at="2025-07-14T19:21:37 IST" name="verifyLoginFunctionality" finished-at="2025-07-14T19:21:47 IST" duration-ms="10418" status="FAIL">
+        <test-method signature="verifyLoginFunctionality()[pri:0, instance:com.irctc.tests.LoginPageTest@470f1802]" started-at="2025-07-14T19:27:41 IST" name="verifyLoginFunctionality" finished-at="2025-07-14T19:28:12 IST" duration-ms="30629" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (12bf356a8f11a32272fb3b27e43ba7d2)] -> xpath: //a[contains(text(),'LOGIN')]] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7b251e9a91fb7d783f049781129f6cae)] -> xpath: //a[contains(text(),'LOGIN')]] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.98, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60377}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60377/devtoo..., se:cdpVersion: 138.0.7204.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12bf356a8f11a32272fb3b27e43ba7d2]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.98, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60497}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60497/devtoo..., se:cdpVersion: 138.0.7204.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b251e9a91fb7d783f049781129f6cae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (12bf356a8f11a32272fb3b27e43ba7d2)] -> xpath: //a[contains(text(),'LOGIN')]] (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (7b251e9a91fb7d783f049781129f6cae)] -> xpath: //a[contains(text(),'LOGIN')]] (tried for 30 second(s) with 500 milliseconds interval)
 Build info: version: '4.33.0', revision: '2c6aaad03a'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.98, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60377}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60377/devtoo..., se:cdpVersion: 138.0.7204.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12bf356a8f11a32272fb3b27e43ba7d2
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.98, chrome: {chromedriverVersion: 138.0.7204.94 (545025748884..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60497}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60497/devtoo..., se:cdpVersion: 138.0.7204.98, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7b251e9a91fb7d783f049781129f6cae
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at com.irctc.pages.LoginPage.login(LoginPage.java:36)

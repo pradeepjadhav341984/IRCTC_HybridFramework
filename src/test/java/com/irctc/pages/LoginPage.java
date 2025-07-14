@@ -19,7 +19,7 @@ public class LoginPage {
     }
 
     // Elements
-    @FindBy(xpath = "//a[contains(text(),'LOGIN')]")
+    @FindBy(xpath = "//input[@placeholder='User Name']")
     private WebElement loginLink;
 
     @FindBy(xpath = "//input[@formcontrolname='userid']")
@@ -33,7 +33,7 @@ public class LoginPage {
 
     // Method
     public void login(String user, String pass) {
-        wait.until(ExpectedConditions.elementToBeClickable(loginLink)).click();
+       // wait.until(ExpectedConditions.elementToBeClickable(loginLink)).click();
         wait.until(ExpectedConditions.visibilityOf(username)).sendKeys(user);
         password.sendKeys(pass);
         loginBtn.click();
