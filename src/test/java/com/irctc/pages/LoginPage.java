@@ -28,9 +28,7 @@ public class LoginPage {
             System.out.println("No alert popup");
         }
 
-        // Click LOGIN button
-        WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'LOGIN')]")));
-        loginBtn.click();
+      
 
         // Wait for username field
         WebElement userId = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@formcontrolname='userid']")));
@@ -40,7 +38,7 @@ public class LoginPage {
         password.sendKeys(passwordVal);
 
         // Click sign in
-        WebElement signInBtn = driver.findElement(By.xpath("//button[@label='SIGN IN']"));
+        WebElement signInBtn = driver.findElement(By.xpath("//button[text()='SIGN IN']"));
         signInBtn.click();
     }
 }

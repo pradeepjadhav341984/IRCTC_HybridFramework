@@ -1,0 +1,5 @@
+# Created at 2025-07-15T10:23:00.979
+Boot Manifest-JAR contains absolute paths in classpath 'E:\workspace\IRCTC_HybridFramework\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
