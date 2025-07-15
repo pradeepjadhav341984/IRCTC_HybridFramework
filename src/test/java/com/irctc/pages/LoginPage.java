@@ -1,5 +1,6 @@
 package com.irctc.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
@@ -14,28 +15,32 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
-    // Elements
-    @FindBy(xpath = "//input[@placeholder='User Name']")
-    private WebElement loginLink;
+    public void login(String userIdVal, String passwordVal) {
 
-    @FindBy(xpath = "//input[@formcontrolname='userid']")
-    private WebElement username;
+        try {
+            // Close popup if it appears
+            WebElement popupClose = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".fa.fa-window-close")));
+            popupClose.click();
+        } catch (Exception e) {
+            System.out.println("No alert popup");
+        }
 
-    @FindBy(xpath = "//input[@type='password']")
-    private WebElement password;
-
-    @FindBy(xpath = "//button[text()='SIGN IN']")
-    private WebElement loginBtn;
-
-    // Method
-    public void login(String user, String pass) {
-       // wait.until(ExpectedConditions.elementToBeClickable(loginLink)).click();
-        wait.until(ExpectedConditions.visibilityOf(username)).sendKeys(user);
-        password.sendKeys(pass);
+        // Click LOGIN button
+        WebElement loginBtn = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[contains(text(),'LOGIN')]")));
         loginBtn.click();
+
+        // Wait for username field
+        WebElement userId = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@formcontrolname='userid']")));
+        WebElement password = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@formcontrolname='password']")));
+
+        userId.sendKeys(userIdVal);
+        password.sendKeys(passwordVal);
+
+        // Click sign in
+        WebElement signInBtn = driver.findElement(By.xpath("//button[@label='SIGN IN']"));
+        signInBtn.click();
     }
 }
